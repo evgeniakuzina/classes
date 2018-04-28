@@ -6,116 +6,116 @@
 */
 
 class Car {
-	private $price;
-	public $brand;
-	public $model;
-	public $color;
-	const WHEELS = 4;
-	public static $carCounter = 0;
-	
-	public function __construct($price, $brand, $model, $color) {
-		self::$carCounter++;
-		$this->price = $price;
-		$this->brand = $brand;
-		$this->model = $model;
-		$this->color = $color;
-	}
+    private $price;
+    public $brand;
+    public $model;
+    public $color;
+    const WHEELS = 4;
+    public static $carCounter = 0;
     
-	public function getPrice() {
-		return $this->price;
-	}
+    public function __construct($price, $brand, $model, $color) {
+        self::$carCounter++;
+        $this->price = $price;
+        $this->brand = $brand;
+        $this->model = $model;
+        $this->color = $color;
+    }
+    
+    public function getPrice() {
+        return $this->price;
+    }
 }
 
 $bmw = new Car(5000, 'BMW', 'X5', 'Белый');
 $toyota = new Car(2000, 'Toyota', 'Camry', 'Черный');
 
 class TV {
-	private $price;
-	public $brand;
-	public $diagonal;
-	public $remoteControl;
-	public static $tvCounter = 0;
+    private $price;
+    public $brand;
+    public $diagonal;
+    public $remoteControl;
+    public static $tvCounter = 0;
     
-	public function __construct($price, $brand, $diagonal, $remoteControl) {
-		self::$tvCounter++;
-		$this->price = $price;
-		$this->brand = $brand;
-		$this->diagonal = $diagonal;
-		$this->remoteControl = $remoteControl;
-	}
+    public function __construct($price, $brand, $diagonal, $remoteControl) {
+        self::$tvCounter++;
+        $this->price = $price;
+        $this->brand = $brand;
+        $this->diagonal = $diagonal;
+        $this->remoteControl = $remoteControl;
+    }
     
-	public function getPrice() {
-		return $this->price;
-	}
+    public function getPrice() {
+        return $this->price;
+    }
 }
 
 $samsung = new TV(500, 'Samsung', 48, 'Да');
 $toshiba = new TV(100, 'Toshiba', 17, 'Нет');
 
 class Pen {
-	private $price;
-	public $refillColor;
-	public $bodyColor;
-	public $penLid;
-	public static $penCounter = 0;
+    private $price;
+    public $refillColor;
+    public $bodyColor;
+    public $penLid;
+    public static $penCounter = 0;
     
-	public function __construct($price, $refillColor, $bodyColor, $penLid) {
-		self::$penCounter++;
-		$this->price = $price;
-		$this->refillColor = $refillColor;
-		$this->bodyColor = $bodyColor;
-		$this->penLid = $penLid;
-	}
+    public function __construct($price, $refillColor, $bodyColor, $penLid) {
+        self::$penCounter++;
+        $this->price = $price;
+        $this->refillColor = $refillColor;
+        $this->bodyColor = $bodyColor;
+        $this->penLid = $penLid;
+    }
     
-	public function getPrice() {
-		return $this->price;
-	}
+    public function getPrice() {
+        return $this->price;
+    }
 }
 
 $firstPen = new Pen(2, 'Голубой', 'Прозрачный', 'Да');
 $secondPen = new Pen(1, 'Красный', 'Белый', 'Нет');
 
 class Duck {
-	private $name;
-	public $color;
-	public $age;
-	public $placeOfLiving;
-	public static $duckCounter = 0;
+    private $name;
+    public $color;
+    public $age;
+    public $placeOfLiving;
+    public static $duckCounter = 0;
     
-	public function __construct($name, $color, $age, $placeOfLiving) {
-		self::$duckCounter++;
-		$this->name = $name;
-		$this->color = $color;
-		$this->age = $age;
-		$this->placeOfLiving = $placeOfLiving;
-	}
+    public function __construct($name, $color, $age, $placeOfLiving) {
+        self::$duckCounter++;
+        $this->name = $name;
+        $this->color = $color;
+        $this->age = $age;
+        $this->placeOfLiving = $placeOfLiving;
+    }
     
-	public function getName() {
-		return $this->name;
-	}
+    public function getName() {
+        return $this->name;
+    }
 }
 
 $firstDuck = new Duck('Роджер', 'Коричневый', 1, 'Парк Горького');
 $secondDuck = new Duck('Василиса', 'Сизый', 2, 'Венесуэла');
 
 class Product{
-	private $price;
-	public $category;
-	public $name;
-	public $weight;
-	public static $productCounter = 0;
+    private $price;
+    public $category;
+    public $name;
+    public $weight;
+    public static $productCounter = 0;
     
-	public function __construct($price, $category, $name, $weight) {
-		self::$productCounter++;
-		$this->price = $price;
-		$this->category = $category;
-		$this->name = $name;
-		$this->weight = $weight;
-	}
+    public function __construct($price, $category, $name, $weight) {
+        self::$productCounter++;
+        $this->price = $price;
+        $this->category = $category;
+        $this->name = $name;
+        $this->weight = $weight;
+    }
     
-	public function getPrice() {
-		return $this->price;
-	}
+    public function getPrice() {
+        return $this->price;
+    }
 }
 
 $firstProduct = new Product(20, 'Канцтовары', 'Тетрадь', 100);
