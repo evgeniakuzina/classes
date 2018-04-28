@@ -12,7 +12,7 @@ class Car {
 	public $color;
 	const WHEELS = 4;
 	public static $carCounter = 0;
-    
+	
 	public function __construct($price, $brand, $model, $color) {
 		self::$carCounter++;
 		$this->price = $price;
